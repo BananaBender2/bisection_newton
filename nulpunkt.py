@@ -152,6 +152,5 @@ while methodrun:
  1) Bisektion
  2) Newton Raphson
          """)
-        continue
     
     print("")
