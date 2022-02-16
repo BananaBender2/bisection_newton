@@ -87,7 +87,7 @@ while methodrun:
         testfor = L[1]-L[0] > 0.0001
         while testfor: #secure precision on 4 decimals
             x = (L[0]+L[1])/2
-            calc = eval(f)
+            calc = round(eval(f), 6) #needs to be rounded or else we will get an error, ex.: 2.22044604925031e-16
 
             if calc == 0:
                 testfor = False
